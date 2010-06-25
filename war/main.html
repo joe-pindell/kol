@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<link rel="stylesheet" type="text/css" href="css/960.css">
+<link rel="stylesheet" type="text/css" href="css/smoothness/jquery.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.8.2.custom.min.js"></script>
+	<script type="text/javascript" src="/js/formValidation.js"></script>
+<style>
+	body{ font: 70.5% "Trebuchet MS", sans-serif; }
+	.login{
+		width:auto;
+		display: block;
+		margin: 0 0 3em 0;
+		padding: 0 1em 1em 1em;
+		float:right;
+		border:none;
+		
+
+	}
+	.signup{
+		width:auto;
+		display: block;
+		padding: 0 1em 1em 1em;
+		float:left;
+		
+		
+		
+		}
+	.login input{
+		display: block;
+	width: 15em;
+
+	}
+	.signup input{
+		display: block;
+	width: 15em;
+
+	}
+	.signup input#zip{
+		width:5em;
+		display:block;
+		margin:0 10em 0 0;
+	}
+	
+	.login label{
+		float: left;
+	display: block;
+	margin: 1em 1em 0 0;
+	font-weight: bold;
+
+	}
+	.signup label{
+		float: left;
+	display: block;
+	margin: 1em 1em 0 0;
+	font-weight: bold;
+
+	}
+	.login.checkbox{
+		width: 15em;
+		margin: 1em 0 2em 0;
+
+	}
+	#check_label{
+		font-weight: normal;
+		
+
+
+	}
+	#check_login{
+		clear: both;
+	float: left;
+	width: auto;
+
+	}
+	.login button{
+		clear: both;
+	top: 0;
+
+	}
+	.login span#button_span{
+		float:right;
+		margin: 0 0 0 50px;
+	}
+	.signup span#button_span{
+		float:right;
+		margin: 15px 0 0 50px;
+		
+	}
+	
+	#title{
+		float:left;
+		font-size:200%;
+		font-weight:bold;
+		margin:40px 0 0 30px;
+	}
+	label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+	.fg-button { 
+   outline: 0; 
+   margin:0 4px 0 0; 
+   text-decoration:none !important; 
+   cursor:pointer; 
+   position: relative; 
+   text-align: center; 
+   zoom: 1; 
+   }
+
+.subTitle{
+	font-size:150%;
+	float:right;
+	margin:1em 10em 0 0;
+}
+
+</style>
+<script>
+  $(document).ready(function(){
+    $("#form1").validate();
+	$("#form2").validate();
+  });
+  </script>
+
+<head>
+<title>Your title here</title>
+</head>
+<body>
+                
+
+<div id="header" class="container_12">
+
+<div id="headerBar" class="grid_12 headerBar">
+<span id="title">Keepers of the Legend - Baseball</span>
+	<form id="form1" method="post" action="">
+	<fieldset class="login">
+		
+		<label for="email">
+			Email
+			<input type="text" id="email" name="eamail" class="required email"/>
+			
+		</label>
+		<label for="password">
+			Password
+			<input type="password" id="password" class="required"/>
+		</label>
+		<br>
+		<label for"check_login" id="check_label">
+			Keep me logged in&nbsp;&nbsp;<span><a href="">Forgot your password?</a></span>
+			<input class="checkbox" type=checkbox id="check_login" name="check_login"/>
+			<span id="button_span"><button class="fg-button ui-state-default ui-corner-all" type="submit">Login</button></span>
+		</label>
+		
+		
+	</fieldset>
+	</form>
+
+</div>
+
+</div>
+
+                
+
+<div id="content" class="container_12">
+
+<div id="nav" class="grid_2 nav">
+
+</div>
+
+<div id="content" class="grid_7 content">
+<div class="subTitle">Where the stories...</div>
+
+</div>
+
+<div id="attention" class="grid_3 attention">
+<form id="form2" method=post action="">
+		<fieldset  class="signup">
+			<legend>Sign Up</legend>
+			<label for="email">
+				Email
+			</label>
+			<input type="text" name="email" id="email" class="required email"/>
+			
+			<label for="newPW">New Password</label>
+			<input type="text" id="newPW" name="newPW" class="required"/>
+			
+			<label for="zip">Zip Code</label>
+			<input type="text" id="zip" name="zip" class="required"  maxlength="5"/>
+			
+			
+			<span id="button_span"><button class="fg-button ui-state-default ui-corner-all" />Sign Up</button></span>
+		</fieldset>
+	</form>
+
+</div>
+
+</div>
+
+                
+
+<div id="footer" class="container_12">
+
+<div id="footer" class="grid_12 footer">
+
+</div>
+
+</div>
+
+            
+</body>
+</html>
