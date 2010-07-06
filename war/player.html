@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/960.css">
+<link rel="stylesheet" type="text/css" href="css/smoothness/jquery.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="/js/formValidation.js"></script>
+
+<style>
+body{ font: 70.5% "Trebuchet MS", sans-serif; }
+#kolTitle{
+float:left;
+margin:3px 0 3px 3px;
+font-weight:bold;
+}
+#welcome{
+margin:3px 3px 3px 0;
+float:right;
+
+}
+#profilePhoto{
+height:150px;
+width:auto;
+
+}
+
+.grid_2 nav.ui-widget{
+margin:5px 5px 5px;
+width:175px;
+}
+#info{
+width:150px;
+float:left;
+margin:5px 5px 5px 75px;
+}
+.info{
+		width:auto;
+		display: block;
+		margin: 0 0 3em 5em;
+		padding: 0 1em 1em 1em;
+		float:right;
+		border:none;
+}
+.info input{
+		display: block;
+	width: 15em;	
+}
+.info input#button{
+	width:5em;
+	margin:5px 0 0 0;
+}
+.info label{
+		float: left;
+	display: block;
+	margin: 1em 1em 0 0;
+	font-weight: bold;
+
+}
+.info span#button_span{
+		float:right;
+		margin: 15px 0 0 50px;
+		
+	}
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+</style>
+<script>
+$(document).ready(function(){
+    $("#form1").validate();
+	
+  });
+</script>
+</head>
+<body>
+                
+
+<div id="header" class="container_12">
+
+<div id="headerBar" class="grid_12 headerBar">
+<div id="kolTitle">Keepers of the Legend</div>
+<div id="welcome">Welcome User Name</div>
+
+</div>
+
+</div>
+
+                
+
+<div id="content" class="container_12">
+
+<div id="nav" class="grid_2 nav">
+<div class="ui-widget"></div>
+<div class="ui-widget" id="contact">
+	<div class="ui-widget-header ui-icon-triangle-1-s" id="contactHeader">Contact</div>
+	<div class="ui-widget-content" id="contactContent"><p>Height:5'11"<br>Weight:207lbs</p></div>
+
+</div>
+<div class="ui-widget" id="contact">
+	<div class="ui-widget-header ui-icon-triangle-1-s" id="actionsHeader">Actions</div>
+	<div class="ui-widget-content" id="actionContent"><p>This is where the action stuff goes</p></div>
+
+</div>
+
+</div>
+
+<div id="content" class="grid_7 content">
+<div id="info" >
+	<form name="form1" id="form1" action="" method="POST" >
+		<fieldset class="info">
+		<legend>Personal Info</legend>
+		<label for="fName">First Name
+			<input type="text" name="fName" id="fName" class="required" />
+		</label>
+		<label for="lName">Last Name
+			<input type="text" name="lName" id="lName" class="required" />
+		</label>
+		<label for="zip">Zip Code
+			<input type="text" name="zip" id="zip" class="required" />
+		</label>
+		<span id="button_span"><button class="fg-button ui-state-default ui-corner-all" type="submit">Submit</button></span>
+		
+		</fieldset>
+	
+	</form>
+</div>
+
+
+</div>
+
+<div id="attention" class="grid_3 attention">
+
+
+
+</div>
+
+</div>
+
+                
+
+<div id="footer" class="container_12">
+
+<div id="footer" class="grid_12 footer">
+
+</div>
+
+</div>
+
+            
+</body>
+</html>
